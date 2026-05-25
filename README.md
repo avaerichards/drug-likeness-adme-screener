@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-Data%20Analysis-blue?style=for-the-badge&logo=python" alt="Python badge">
   <img src="https://img.shields.io/badge/RDKit-Cheminformatics-green?style=for-the-badge" alt="RDKit badge">
@@ -11,23 +10,23 @@ A cheminformatics workflow for prioritizing natural products using physicochemic
 
 ## Executive Summary
 
-This project was designed to demonstrate practical computational skills relevant to medicinal chemistry, pharmaceutical research, and data-driven compound evaluation. Using RDKit-derived descriptors, compounds were screened with Lipinski-style and Veber-style criteria, ranked by rule performance, and organized into decision-ready triage categories.
+This project demonstrates practical computational skills relevant to medicinal chemistry, pharmaceutical research, and data-driven compound evaluation. Using RDKit-derived descriptors, compounds were screened with Lipinski-style and Veber-style criteria, ranked by rule performance, and organized into decision-ready triage categories.
 
-The workflow emphasizes a core challenge in early discovery: moving from a large, chemically diverse compound set to a narrower subset that is more actionable for downstream evaluation. Rather than treating descriptors as isolated values, the analysis uses them to support a practical prioritization task.
+The workflow addresses a common early-discovery problem: narrowing a large and chemically diverse compound set into a smaller subset that is more actionable for downstream evaluation. Rather than treating descriptors as isolated values, the analysis uses them to support a clear prioritization task.
 
 ## Key Outcomes
 
-- Built a reproducible Python workflow for compound triage using RDKit-derived descriptors.
-- Screened 2,000 natural products with rule-based filters relevant to oral drug-likeness.
-- Identified 1,157 compounds that satisfied both Lipinski-style and Veber-style screening criteria.
+- Built a reproducible Python workflow for descriptor-based compound triage.
+- Screened 2,000 natural products using RDKit-derived physicochemical properties.
+- Identified 1,157 compounds that satisfied both Lipinski-style and Veber-style criteria.
 - Generated ranked output tables and visual summaries for rapid interpretation.
-- Structured the project as a portfolio-ready analysis with notebook, processed outputs, and figures.
+- Organized the project into a clear GitHub-ready structure with notebook, processed data, and results figures.
 
 ## Scientific Context
 
-Natural products remain an important source of bioactive molecular scaffolds, but many occupy physicochemical space that can complicate oral drug development. Rule-based screening provides a fast first-pass method for identifying compounds that more closely align with commonly used medicinal chemistry heuristics.
+Natural products remain a major source of structurally diverse bioactive molecules, but many occupy physicochemical space that can complicate oral drug development. Rule-based screening provides a fast first-pass method for identifying compounds that more closely align with commonly used medicinal chemistry heuristics.
 
-This type of workflow is useful for early prioritization, lead-selection support, and exploratory compound profiling. It can also serve as a foundation for later extensions such as structural alert filtering, clustering, similarity search, or predictive modeling.
+This type of workflow is useful for early prioritization, lead-selection support, and exploratory compound profiling. It also provides a foundation for future extensions such as clustering, similarity analysis, structural alert filtering, or predictive modeling.
 
 ## Input Features
 
@@ -40,7 +39,7 @@ The analysis used a descriptor table containing the following RDKit-derived prop
 - Hydrogen bond acceptors (`HAcceptors_rdkit`)
 - Rotatable bonds (`RotBonds_rdkit`)
 
-These descriptors were used to support rule-based compound classification and triage labeling.
+These descriptors were used to support rule-based screening and triage labeling.
 
 ## Screening Framework
 
@@ -86,7 +85,7 @@ Compounds were assigned to three categories:
 | Borderline compounds | 462 |
 | Lower-priority compounds | 617 |
 
-These results show that a substantial subset of the screened natural products falls within commonly used oral drug-likeness heuristics, while also revealing a meaningful fraction of compounds that may require deprioritization or later structural optimization.
+These results indicate that a substantial subset of the screened natural products falls within commonly used oral drug-likeness heuristics, while also highlighting compounds that may require deprioritization or later structural optimization.
 
 ## Repository Structure
 
